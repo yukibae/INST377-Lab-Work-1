@@ -1,13 +1,3 @@
-Replace this with your complete HTML from Lab 1
-
-Hook it up to CSS by including style.css in the <head> tag
-
-Then add CSS class names to your HTML to make it look like the lab pictures.
-For example: <div class="selector">
-
-You should not need to edit the CSS to do this, only the HTML.
-
-Don't forget to add an actual set of image descriptions to your image carousel.
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,12 +7,14 @@ Don't forget to add an actual set of image descriptions to your image carousel.
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <header><h1> Anjali Papali's Labs for INST377</h1></header>
-    <div>
-      <div>
-        <h3> Album Names </h3>
-      </div>
+  <div class="wrapper">
+    <!--wrapper-->
+    <header class="header"><h1> Anjali Papali's Labs for INST377</h1></header>
+    <div class="container">
+        <!--container-->
+      <div class="left_section box">
+        <!--left section -->
+        <h2> Album Names </h2>
       <div> 
       <ol>
         <li> Machine Gun Kelly - Tickets To My Downfall </li>
@@ -32,10 +24,10 @@ Don't forget to add an actual set of image descriptions to your image carousel.
         <li> gianni & kyle - she's no angel </li>
       </ol>
     </div>
-    </div>
-    <h3> Imagine Carousel </h3>
-  </div>
-  <div>
+</div>
+  <div class= "right_section box"><h2> Imagine Carousel </h2> <!--right section-->
+  <div class="grid">
+    <!--grid-->
     <!--JPGs-->
     <img src ='images/mochi.jpg' width ='75' alt = 'A mochi ball in a bubble'/>
 
@@ -47,14 +39,15 @@ Don't forget to add an actual set of image descriptions to your image carousel.
 
     <!--SVGs-->
     <img src ='images/mochi.svg' alt ='A mochi ball with Bézier handles'/>
-
-  </div>
-
-  <div>
+</div>
+</div>
+</div>
+  <div class=" subtitle box">
     <p> Description of the images above </p>
   </div>
+</div>
 
-  <footer> Github account name <a href="https://github.com/yukibae/INST377-Lab-Work-1" target="_blank" rel="noopener noreferrer"> yukibae's Github Account</a></footer>
 
+  <footer class="footer"> Github account name <a href="https://github.com/yukibae/INST377-Lab-Work-1" target="_blank" rel="noopener noreferrer"> yukibae's Github Account</a></footer>
 </body>
 </html>
