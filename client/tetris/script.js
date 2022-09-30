@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const grid = document.querySelector('.grid');
-  let sqaures = (document.querySelector('.grid div'));
-  const ScoreDisplay = document.querySelector('#score');
-  const StartBtn = document.querySelector('#start-button');
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.querySelector(".grid");
+  let squares = (document.querySelector(".grid div"));
+  const scoreDisplay = document.querySelector("#score");
+  const startBtn = document.querySelector("#start-button");
   const width = 10;
 
   // The Tetrominos
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // draw the first rotation in the first tetromino
   function draw() {
-    current.forEach((index) => {
+    current.forEach(index => {
       squares[currentPosition + index].classList.add('tetromino');
     });
   }
@@ -63,5 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
       squares[currentPosition + index].classList.remove('tetromino')]
     })
   }
-  
+
+  //make the tetromino move down every secod
+  timerID = setInterval(moveDown, 1000)
 });
