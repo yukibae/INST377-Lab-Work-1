@@ -8,7 +8,7 @@
 */
 
 html {
-  background-color: #fff;
+  background-color: rgb(203, 42, 42);
   font-size: 16px;
   min-width: 300px;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -128,14 +128,14 @@ form {
 }
 
 .left_section {
-  background-color: rgba(125, 161, 161, 0.8);
+  background-color: rgba(188, 245, 245, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(145, 202, 235, 0.7);
+  background-color: rgb(195, 236, 255);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -173,12 +173,12 @@ form {
   /* Hue, saturation, luminosity, alpha */
   background-color: hsla(0, 0%, 90%, 0.15);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: rgb(37, 52, 45);
   text-decoration: none;
 }
 
 .subtitle {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(230, 82, 82, 0.8);
   margin: 0px;
   margin-bottom: 5px;
 }
@@ -303,7 +303,7 @@ form input {
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
-      background-color: rgba(204, 8, 162, 0.65);
+      background-color: rgba(255, 0, 0, 0.65);
       flex-direction: column;
       justify-content: center;
       align-items: center;
