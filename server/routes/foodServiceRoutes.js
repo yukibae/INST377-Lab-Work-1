@@ -38,8 +38,7 @@ router.use(loadFoodServiceData);
   The other methods come in later!
 */
 
-router
-  .route('/') // /api/foodServicePG - this address is set in /apiRoutes!
+router.route('/') // /api/foodServicePG - this address is set in /apiRoutes!
   .get(async (req, res) => { // Setting this callback to use an async keyword gives us access to await even if we don't use it
     /*
       GET is what happens when you load a route with no other requests
