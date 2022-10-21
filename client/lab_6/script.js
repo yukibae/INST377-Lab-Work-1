@@ -11,6 +11,11 @@
     Under this comment place any utility functions you need - like an inclusive random number selector
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 */
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Max.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min); // The max is inclusive and the min is inclusive
+}
 
 function injectHTML(list) {
   console.log('fired injectHTML');
