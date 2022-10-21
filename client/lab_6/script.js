@@ -1,3 +1,4 @@
+
 /* eslint-disable max-len */
 
 /*
@@ -31,7 +32,12 @@ function injectHTML(list) {
 
 function processRestaurants(list) {
   console.log('fired restaurants list');
-
+  const range = [...Array(15).keys()]; // special notation to create an array of elements
+  const newArray = range.map((item) => {
+    const index = getRandomIntInclusive(0, list.length);
+    return list[index];
+  })
+  return newArray;
   /*
     ## Process Data Separately From Injecting It
       This function should accept your 1,000 records
@@ -105,6 +111,7 @@ async function mainEvent() {
 
       // This constant will have the value of your 15-restaurant collection when it processes
       const restaurantList = processRestaurants(arrayFromJson.data);
+      console.log(restaurantList);
 
       // And this function call will perform the "side effect" of injecting the HTML list for you
       injectHTML(restaurantList);
