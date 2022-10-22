@@ -101,6 +101,7 @@ form {
   font-size: 1.5rem;
   padding: 1.25rem;
   margin:0; /* removing the margin on h1 tags means the header pins to the top if we move */
+  border-style: dashed;
 
 
   /* box-shadows are fancy */
@@ -157,6 +158,7 @@ form {
   flex-shrink: 0;
   padding: 1rem;
   background-color: rgba(41, 41, 210, 0.8);
+  border-style: dashed;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -307,7 +309,8 @@ form input {
     .container {
       background-color: rgba(255, 0, 0, 0.65);
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
     }
 }
