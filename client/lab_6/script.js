@@ -13,7 +13,7 @@
 */
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
-  max = Max.floor(max);
+  max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min); // The max is inclusive and the min is inclusive
 }
 
@@ -27,8 +27,9 @@ function injectHTML(list) {
   list.forEach((item) => {
     const el = document.createElement('li');
     el.innerText = item.name;
-    listEl.appendChild(el);
-  });
+    listEl.appendChild(el); 
+  }); 
+
   /*
   ## JS and HTML Injection
     There are a bunch of methods to inject text or HTML into a document using JS
@@ -47,7 +48,7 @@ function injectHTML(list) {
 
 function processRestaurants(list) {
   console.log('fired restaurants list');
-  const range = [...Array(15).keys()]; // special notation to create an array of elements
+  const range = [...Array(15).keys()]; // special notation to create an array of 15 elements
   const newArray = range.map((item) => {
     const index = getRandomIntInclusive(0, list.length);
     return list[index];
@@ -92,7 +93,7 @@ async function mainEvent() {
     This next line goes to the request for 'GET' in the file at /server/routes/foodServiceRoutes.js
     It's at about line 27 - go have a look and see what we're retrieving and sending back.
    */
-  const results = await fetch('/api/foodServicesPG');
+  const results = await fetch('/api/foodServicePG');
   const arrayFromJson = await results.json(); // here is where we get the data from our request as JSON
 
   /*
