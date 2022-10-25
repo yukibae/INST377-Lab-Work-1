@@ -119,6 +119,14 @@ async function mainEvent() {
     loadAnimation.classList.remove('lds-ellipsis');
     loadAnimation.classList.add('lds-ellipsis_hidden'); // let's turn the submit button back on by setting it to display as a block when we have data avaliable
 
+    let currentList = [];
+
+    form.addEventListener('input', (event)=>{
+        console.log(event.target.value);
+        const filteredListElements = filterList(arrayFromJson.data, event.target.value);
+        injectHTML(filteredListElements);
+    });
+
     // And here's an eventListener! It's listening for a "submit" button specifically being clicked
     // this is a synchronous event event, because we already did our async request above, and waited for it to resolve
     form.addEventListener('submit', (submitEvent) => {
