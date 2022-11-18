@@ -263,17 +263,30 @@
   .prev:focus,
   .next:focus {
     margin: 0;
+    border: 2px solid rgb(155, 101, 255);
     /* Pick a good border colour and check out how it works with your buttons */
   }
   
   .prev:hover,
   .next:hover {
+    background-color: rgb(203, 42, 42);
     /* Pick a good background colour for your hover pseudoclass */
   }
+
+  /* MAP STYLES*/
+  #map { height: 180px; }
   
+  #map {
+    display: block;
+    width: 400px;
+    height:380px;
+    border: 2px dashed rgb(99,99,99);
+    margin-bottom:1rem;
+  }
   /*
   Form Styles
   */
+
   
   form input {
       /* This is a hack to make sure our boxes line up with one another nicely */
